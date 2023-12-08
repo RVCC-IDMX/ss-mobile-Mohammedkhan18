@@ -22,6 +22,9 @@ svg {
 nav {
   max-width: 80ch;
   margin: 8vh auto;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 15px;
 }
 
 h1 {
