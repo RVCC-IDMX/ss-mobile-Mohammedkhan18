@@ -1,10 +1,36 @@
 /* main */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Italiana&display=swap");
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
+:root {
+  --font-size-h1: 3.5rem;
+  --font-size-h2: 1.5rem;
+  --bg-color-one: #FFFFFF;
+  --border-left-color: #FFB002;
+  --bg-color-two: #0E0E10;
+  --bg-color-three: #FFB002;
+  --bg-color-four: #D2D8FC;
+  --paragraph-font-size: 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  opacity: 0;
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+header .link-github {
+  margin-left: auto;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: var(--bg-color-three);
 }
 
 header {
@@ -13,6 +39,15 @@ header {
   background-size: cover;
   min-height: 40vh;
   background-repeat: no-repeat;
+}
+
+header .container {
+  max-width: 35em;
+  margin: 3em auto;
+  padding: 2.5rem;
+  background-color: var(--bg-color-one);
+  border-left: 0.5em solid var(--border-left-color);
+  border-radius: 1em;
 }
 
 body {
@@ -37,20 +72,45 @@ nav {
 
 h1 {
   font-family: "Italiana";
-  font-size: 3.5rem;
+  font-size: var(--font-size-h1);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-h2);
 }
 
 nav ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr));
-  list-style: none;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
-  grid-gap: 1rem;
+  padding: 0;
+  list-style: none;
+  background: linear-gradient(30deg, var(--bg-color-three), var(--bg-color-four));
+}
+
+li {
+  display: list-item;
+}
+
+nav ul a {
+  display: inline-grid;
+  padding: 0.5rem;
+  color: var(--bg-color-two);
+  font-size: 1em;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul a::after {
+  width: 100%;
+  height: 3px;
+  background-color: var(--bg-color-four);
+  opacity: 0;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  transition: 300ms all ease-in-out;
 }
 
 :is(h1, h2, h3) {
@@ -63,4 +123,8 @@ nav ul {
 
 a:not([class]) {
   text-underline-offset: 0.25em;
+}
+
+header p {
+  font-size: var(--paragraph-font-size);
 }
