@@ -113,7 +113,6 @@ nav ul a::after {
   height: 3px;
   background-color: var(--bg-color-four);
   opacity: 0;
-  content: "";
   position: absolute;
   bottom: -5px;
   transition: 300ms all ease-in-out;
