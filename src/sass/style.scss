@@ -9,6 +9,14 @@
   padding: 0;
 }
 
+header  {
+    display: grid;
+    background-image: url("../img/Background.jpg");
+    background-size: cover;
+    min-height: 40vh;
+    background-repeat: no-repeat;
+}
+
 body {
   margin: 0;
   line-height: 2;
