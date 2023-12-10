@@ -26,10 +26,6 @@
 }
 
 header .link-github {
-  margin-left: auto;
-  position: absolute;
-  right: 0px;
-  top: 0px;
   background-color: var(--bg-color-three);
 }
 
@@ -61,8 +57,7 @@ svg {
   width: 0.75em;
 }
 
-.container,
-nav {
+.container {
   max-width: 80ch;
   margin: 8vh auto;
   overflow: hidden;
@@ -73,6 +68,11 @@ nav {
 h1 {
   font-family: "Italiana";
   font-size: var(--font-size-h1);
+  text-align: center;
+}
+
+nav {
+  display: block;
 }
 
 h2 {
@@ -112,8 +112,8 @@ nav ul a::after {
   transition: 300ms all ease-in-out;
 }
 
-nav ul a::after:hover {
-  color: var(--bg-color-four);
+nav ul a:hover {
+  border-bottom: 5px solid var(--bg-color-two);
 }
 
 :is(h1, h2, h3) {
