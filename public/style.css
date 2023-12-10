@@ -112,7 +112,7 @@ nav ul a::after {
   transition: 300ms all ease-in-out;
 }
 
-nav ::after:hover {
+nav ul a::after:hover {
   color: var(--bg-color-four);
 }
 
