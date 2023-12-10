@@ -6,16 +6,15 @@
 
 :root {
   --font-size-h1: 4rem;
-  --font-size-h2: 3.5rem;
+  --font-size-h2: 1.9em;
   --bg-color-one: #FFFFFF; 
   --border-left-color: #FFB002; 
   --bg-color-two: #0E0E10;
   --bg-color-three: #FFB002;
   --bg-color-four: #D2D8FC;
-  --paragraph-font-size: .8rem;
-  --font-size: 1.4rem;
-  --font-size-h3: 1.4rem;
-  --font-size-h4: 1.4rem;
+  --paragraph-font-size: 1.15rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.35rem;
 }
 
 .skip-link {
@@ -100,11 +99,6 @@ header h2 {
   font-family: "Italiana";
 }
 
-.container h2 {
-  font-size: var(--font-size);
-  text-align: left;
-  font-family: "Italiana";
-}
 
 h3 {
   font-size: var(--font-size-h3);
