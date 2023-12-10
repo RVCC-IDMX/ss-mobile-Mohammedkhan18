@@ -27,6 +27,7 @@
 
 header .link-github {
   background-color: var(--bg-color-three);
+  margin-left: 25px;
 }
 
 header {
@@ -109,11 +110,13 @@ nav ul a::after {
   content: "";
   position: absolute;
   bottom: -5px;
-  transition: 300ms all ease-in-out;
+  transition: all 300ms ease-in-out 0s;
 }
 
-nav ul a:hover {
-  border-bottom: 5px solid var(--bg-color-two);
+nav ul li:hover a:after {
+  background-color: var(--bg-color-four);
+  border-bottom: 4px solid var(--bg-color-four);
+  opacity: 3;
 }
 
 :is(h1, h2, h3) {
