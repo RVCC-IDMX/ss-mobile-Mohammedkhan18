@@ -1,14 +1,17 @@
 /* main */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Italiana&display=swap");
 :root {
-  --font-size-h1: 3.5rem;
-  --font-size-h2: 1.5rem;
+  --font-size-h1: 4rem;
+  --font-size-h2: 3.5rem;
   --bg-color-one: #FFFFFF;
   --border-left-color: #FFB002;
   --bg-color-two: #0E0E10;
   --bg-color-three: #FFB002;
   --bg-color-four: #D2D8FC;
-  --paragraph-font-size: 1rem;
+  --paragraph-font-size: .8rem;
+  --font-size: 1.4rem;
+  --font-size-h3: 1.4rem;
+  --font-size-h4: 1.4rem;
 }
 
 .skip-link {
@@ -26,8 +29,12 @@
 }
 
 header .link-github {
+  display: block;
+  text-align: center;
   background-color: var(--bg-color-three);
-  margin-left: 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 30px;
 }
 
 header {
@@ -66,18 +73,39 @@ svg {
   padding-right: 15px;
 }
 
-h1 {
+header h1 {
   font-family: "Italiana";
   font-size: var(--font-size-h1);
-  text-align: center;
+  letter-spacing: 20px;
+  font-weight: bolder;
 }
 
 nav {
   display: block;
+  background: linear-gradient(30deg, var(--bg-color-three), var(--bg-color-four));
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
-h2 {
+header h2 {
   font-size: var(--font-size-h2);
+  text-align: left;
+  font-family: "Italiana";
+}
+
+.container h2 {
+  font-size: var(--font-size);
+  text-align: left;
+  font-family: "Italiana";
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-family: "Italiana";
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-family: "Italiana";
 }
 
 nav ul {
@@ -87,7 +115,6 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  background: linear-gradient(30deg, var(--bg-color-three), var(--bg-color-four));
 }
 
 li {
@@ -109,13 +136,13 @@ nav ul a::after {
   opacity: 0;
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -2.5px;
   transition: all 300ms ease-in-out 0s;
 }
 
 nav ul li:hover a:after {
-  background-color: var(--bg-color-four);
-  border-bottom: 4px solid var(--bg-color-four);
+  background-color: var(--bg-color-two);
+  border-bottom: 0.5px solid var(--bg-color-two);
   opacity: 3;
 }
 
@@ -131,6 +158,10 @@ a:not([class]) {
   text-underline-offset: 0.25em;
 }
 
-header p {
+p {
   font-size: var(--paragraph-font-size);
+}
+
+:where(ul, ol) {
+  list-style-position: inside;
 }
