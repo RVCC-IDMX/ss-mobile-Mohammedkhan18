@@ -80,3 +80,5 @@ Use this as the "Publish command" if needed by hosting services such as Netlify.
 
 [Code for Bell's Build Excellent Websites (the source for the Fluid CSS code linked above) ](https://glitch.com/edit/#!/build-excellent-websites)
 
+[Background Image by Victor Grabarczyk](https://unsplash.com/photos/black-and-yellow-abstract-painting-wN9DU73b8_s)
+
